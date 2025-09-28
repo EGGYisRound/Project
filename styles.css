@@ -1,0 +1,187 @@
+
+body{
+    background-size: 100% auto;   
+}
+/*navigation portion*/
+ /* Header Tabs */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background: rgb(181, 133, 60); /* lighter brown header */
+      padding: 12px;
+    }
+    .tabs button {
+      background: rgb(133, 87, 4); /* dark brown buttons */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #fff;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .tabs button:hover {
+      background: rgb(181, 133, 60); /* lighter brown hover */
+      transform: scale(1.05);
+    }
+    .tabs button a{
+        text-decoration: none;
+        color:#fff;
+    }
+/*Header portion*/
+header{
+    background-color: #FFFDD0;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    box-shadow: 10rem 3rem 4rem #d4d3ae;
+    
+}
+header>img{
+    width: 10rem;
+    height: 10rem;
+}
+.banner{
+    background-image: url(bannerop2.jpg);
+    background-size: cover;
+    height: 100rem;
+    width: 87.6rem;
+    display: flex;
+    background-position: top;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.banner h1{
+    font-size: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFFDD0;
+    background-color: rgb(133, 87, 4, .5);
+    padding: 1rem;
+}
+/*Main portion*/
+main{
+    padding: 5rem;
+    background-color: rgb(255, 253, 208, .5) ;
+}
+/*Section 1 of body short intro*/
+.sec1{
+    padding: 3rem;
+    background-color: #FFFDD0;
+    box-shadow: 10rem 3rem 4rem #d4d3ae;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 2rem;
+    border-radius: 12px;
+}
+.sec1>h2{
+    display: flex;
+    align-self: flex-start;
+}
+.sec1>img{
+    width: 15rem;
+    height: 13rem;
+    display: flex;
+    border: 5px solid rgb(133, 87, 4);
+   
+}
+/*Section 2 of body the promotional things*/
+.sec2{
+    margin: 2rem;
+    padding: 5rem;
+    background-color: #FFFDD0;
+    box-shadow: 10rem 3rem 4rem #d4d3ae;
+    display: flex;
+    flex-flow:column wrap;
+    border-radius: 12px;
+}
+.sec2>span{
+    background-color: rgb(181, 133, 60);
+    color: #FFFDD0;
+    font-size: 3rem;
+    border: 10px solid #fbf69e; 
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+.sec2{
+    font-size: 2rem;
+    border: 5px solid #fbf69e;
+}
+.sec2 h3{
+    display: flex;
+    justify-content: center;
+}
+.sec2 p{
+    display: flex;
+    justify-content: center;
+}
+.sec2 img{
+    width: 20rem;
+    height: 30rem;
+    border: 5px solid rgb(133, 87, 4); 
+    display: flex;
+    align-self: center;   
+}
+/*Section 3 of body contacts and location*/
+.sec3{
+    margin: 2rem;
+    padding: 5rem;
+    background-color: #FFFDD0;
+    box-shadow: 10rem 3rem 4rem #d4d3ae;
+    display: flex;
+    flex-flow:column wrap;
+    font-size: 2rem;
+    border: 5px solid #fbf69e;
+    border-radius: 12px;
+}
+.sec3 h2{
+    font-size: 3rem;
+}
+
+/*Footer portion*/
+footer{
+    padding: 0.5rem, 1rem;
+    height: 4rem;
+    font-size:1rem;
+    margin: 0;
+    border: 5px solid rgb(133, 87, 4);
+    background-color: rgb(181, 133, 60);
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    align-items: center;
+}
+footer .footnav{
+    display:flex;
+    justify-content:center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+footer .footnav a{
+    text-decoration: none;
+    color:#FFFDD0;
+    margin-right:auto;
+}
+footer img{
+    width: auto;
+    height: 2.5rem;
+    margin-left: auto;
+}
+footer p{
+    position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+}
+footer a:hover {
+      text-decoration: underline;
+      color: #000;
+}
