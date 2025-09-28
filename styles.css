@@ -46,13 +46,15 @@ header>img{
 .banner{
     background-image: url(bannerop2.jpg);
     background-size: cover;
-    height: 100rem;
-    width: 87.6rem;
+    background-attachment: fixed;
+    background-position: right bottom;
+    border: 10px solid rgb(181, 133, 60);
     display: flex;
     background-position: top;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center; 
+    padding: 6.5rem;
 }
 .banner h1{
     font-size: 5rem;

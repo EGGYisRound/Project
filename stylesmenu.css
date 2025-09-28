@@ -133,6 +133,8 @@ body {
 .bannermenu h1{
   font-size: 3rem;
   font-weight: bold;
+  background-color: rgb(133, 87, 4, .5);
+  padding:1rem;
 }
 
     /*Footer portion*/
