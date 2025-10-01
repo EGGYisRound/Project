@@ -1,179 +1,215 @@
 body {
-      font-family: Arial, sans-serif;
-      background: #FFFDD0; /* cream background */
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-
-    /* Header Tabs */
-    .tabs {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      background: rgb(181, 133, 60); /* lighter brown header */
-      padding: 12px;
-    }
-    .tabs button {
-      background: rgb(133, 87, 4); /* dark brown buttons */
-      border: none;
-      padding: 10px 20px;
-      border-radius: 15px;
-      cursor: pointer;
-      font-weight: bold;
-      color: #fff;
-      transition: transform 0.2s ease, background 0.3s ease;
-    }
-    .tabs button:hover {
-      background: rgb(181, 133, 60); /* lighter brown hover */
-      transform: scale(1.05);
-    }
-    .tabs button a{
-        text-decoration: none;
-        color:#fff;
-    }
-
-
-    /* Menu Box */
-    .menu-box {
-      background: #fffaf0;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 500px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .menu-title {
-      text-align: left;
-      margin: 0 0 10px;
-      font-weight: bold;
-      font-size: 18px;
-      color: rgb(133, 87, 4);
-    }
-    .menu-item {
-      background: rgb(181, 133, 60); /* lighter brown items */
-      color: white;
-      padding: 15px;
-      margin: 8px 0;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: transform 0.2s ease, background 0.3s ease;
-    }
-    .menu-item:hover {
-      background: rgb(133, 87, 4);
-      transform: translateY(-3px);
-    }
-
-
-    /* Action Buttons */
-    .actions {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 15px;
-    }
-    .actions button {
-      background: rgb(133, 87, 4);
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      color: white;
-      cursor: pointer;
-      transition: transform 0.2s ease, background 0.3s ease;
-    }
-    .actions button:hover {
-      background: rgb(181, 133, 60);
-      transform: scale(1.08);
-    }
-
-
-    /* Notes */
-    .notes {
-      background-color: #fffaf0;
-      padding:1.5rem;
-      margin: 15px auto;
-      width: 90%;
-      max-width: 500px;
-      font-size: 14px;
-      color: #333;
-      font-style: italic;
-      text-align: left;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      display: flex;
-      justify-content: center;
-      gap:.5rem;
-    }
-
-
-    /* Footer */
-.menu-box img {
-  width: 120px;
-  margin: 10px auto;
-  display: block;
-  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background: #FFFDD0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.bannermenu{
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: rgb(181, 133, 60);
+  padding: 12px;
+}
+.tabs button {
+  background: rgb(133, 87, 4);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.tabs button:hover {
+  background: #5a3603;
+  transform: scale(1.05);
+}
+.tabs button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Banner */
+.bannermenu {
   background-image: url("bannermenuimg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: right bottom;
+  background-position: center;
   border: 10px solid rgb(181, 133, 60);
   display: flex;
-  background-position: top;
-  flex-flow: column wrap;
   justify-content: center;
-  align-items: center; 
-  color:#FFFDD0;
-  padding:10rem;
+  align-items: center;
+  color: #FFFDD0;
+  padding: 6rem;
 }
-.bannermenu h1{
+.bannermenu h1 {
   font-size: 3rem;
   font-weight: bold;
-  background-color: rgb(133, 87, 4, .5);
-  padding:1rem;
+  background-color: rgba(133, 87, 4, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.bannermenu h1:hover {
+  background-color: rgba(181, 133, 60, 0.7);
+  transform: scale(1.05);
 }
 
-    /*Footer portion*/
-:root {
-  font-size: 16px; /* 1rem = 16px */
+
+/* Menu Grid */
+.menu-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: left;
+}
+.menu-section h2 {
+  color: rgb(133, 87, 4);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(181, 133, 60);
+  padding-bottom: .5rem;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.menu-card {
+  background: #fffaf0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+}
+.menu-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+.menu-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+.menu-card img:hover {
+  transform: scale(1.05);
+}
+.menu-card .info {
+  margin-top: 10px;
+}
+.menu-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: rgb(133, 87, 4);
+}
+.menu-card p {
+  margin: 5px 0 0;
+  color: #444;
+  font-size: 14px;
+}
+.menu-card .price {
+  font-weight: bold;
+  color: rgb(133, 87, 4);
+  margin-top: 8px;
 }
 
+
+/* Hover Description */
+.hover-text {
+  font-size: 13px;
+  color: #c97;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 8px;
+}
+.menu-card:hover .hover-text {
+  opacity: 1;
+}
+
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.actions button {
+  background: rgb(133, 87, 4);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.actions button:hover {
+  background: rgb(181, 133, 60);
+  transform: scale(1.1);
+}
+
+
+/* Notes */
+.notes {
+  background-color: #fffaf0;
+  padding: 1.5rem;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 500px;
+  font-size: 14px;
+  color: #333;
+  font-style: italic;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: row;
+}
+.notes:hover {
+  transform: scale(1.02);
+}
+
+
+/* Footer */
 footer {
   padding: 0.5rem 1rem;
-  height: 4rem;
   font-size: 1rem;
-  margin: 0;
-  border: 0.3125rem solid rgb(133, 87, 4); /* 5px */
+  border: 0.3125rem solid rgb(133, 87, 4);
   background-color: rgb(181, 133, 60);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   flex-wrap: wrap;
+  position: relative;
 }
-
 footer .footnav {
   display: flex;
-  justify-content: center;
   gap: 2rem;
   padding: 1rem 0;
 }
-
 footer .footnav a {
   text-decoration: none;
   color: #FFFDD0;
-  margin: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-
-footer a:hover {
+footer .footnav a:hover {
   text-decoration: underline;
   color: #000;
+  transform: scale(1.05);
 }
-
 footer p {
   position: absolute;
   bottom: 0.2rem;
@@ -182,19 +218,26 @@ footer p {
   font-size: 0.75rem;
   margin: 0;
 }
-
 .logo-container {
-  margin-left: auto;
-  padding: 0.25rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.25rem;
+  transition: transform 0.3s ease;
 }
-
-.logo-container img.footimg {
+.logo-container:hover {
+  transform: scale(1.1);
+}
+.logo-container img {
   width: 2.5rem;
-  height: auto;
   display: block;
 }
+/*Media Queries for moblie responsiveness*/
+@media screen and (max-width: 480px) {
+  footer p{
+  font-size: .5rem;
+  bottom: -.01rem;
+  } 
+}
+
+
+

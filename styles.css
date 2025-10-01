@@ -39,9 +39,14 @@ header{
     box-shadow: 10rem 3rem 4rem #d4d3ae;
     
 }
-header>img{
+header img{
     width: 10rem;
     height: 10rem;
+    border-radius: 1.5rem;
+}
+header img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 .banner{
     background-image: url(bannerop2.jpg);
@@ -51,7 +56,7 @@ header>img{
     border: 10px solid rgb(181, 133, 60);
     display: flex;
     background-position: top;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center; 
     padding: 6.5rem;
@@ -63,6 +68,14 @@ header>img{
     color: #FFFDD0;
     background-color: rgb(133, 87, 4, .5);
     padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.banner h1:hover {
+  transform: scale(1.05);
+  background-color: rgba(90, 56, 16, 0.7); /* darker shade for contrast */
+  color: #ffffff; /* brighten on hover */
 }
 /*Main portion*/
 main{
@@ -81,17 +94,20 @@ main{
     font-size: 2rem;
     border-radius: 12px;
 }
-.sec1>h2{
+.sec1 h2{
     display: flex;
     align-self: flex-start;
 }
-.sec1>img{
+.sec1 img{
     width: 15rem;
     height: 13rem;
-    display: flex;
     border: 5px solid rgb(133, 87, 4);
-   
 }
+.sec1 img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
 /*Section 2 of body the promotional things*/
 .sec2{
     margin: 2rem;
@@ -100,16 +116,23 @@ main{
     box-shadow: 10rem 3rem 4rem #d4d3ae;
     display: flex;
     flex-flow:column wrap;
-    border-radius: 12px;
+    border-radius: 10px;
+    row-gap: 5px;
 }
 .sec2>span{
     background-color: rgb(181, 133, 60);
     color: #FFFDD0;
-    font-size: 3rem;
+    font-size: 2rem;
     border: 10px solid #fbf69e; 
     display: flex;
     justify-content: center;
     border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.sec2 span:hover {
+  transform: scale(1.05);
+  background-color: rgba(199, 123, 36, 0.7); /* darker shade for contrast */
+  color: #ffffff; /* brighten on hover */
 }
 .sec2{
     font-size: 2rem;
@@ -118,6 +141,12 @@ main{
 .sec2 h3{
     display: flex;
     justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.sec2 h3:hover{
+  transform: scale(1.05);
+  background-color: rgba(199, 123, 36, 0.7); /* darker shade for contrast */
+  color: #ffffff; /* brighten on hover */
 }
 .sec2 p{
     display: flex;
@@ -130,6 +159,11 @@ main{
     display: flex;
     align-self: center;   
 }
+.sec2 img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
 /*Section 3 of body contacts and location*/
 .sec3{
     margin: 2rem;
@@ -142,8 +176,15 @@ main{
     border: 5px solid #fbf69e;
     border-radius: 12px;
 }
-.sec3 h2{
+.sec3 h3{
     font-size: 3rem;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+}
+.sec3 h3:hover{
+  transform: scale(1.05);
+  background-color: rgba(199, 123, 36, 0.7); /* darker shade for contrast */
+  color: #ffffff; /* brighten on hover */
 }
 
 /*Footer portion*/
@@ -186,4 +227,80 @@ footer p{
 footer a:hover {
       text-decoration: underline;
       color: #000;
+}
+
+/*Media Queries for moblie responsiveness*/
+@media screen and (max-width: 650px) {
+  body{
+    font-size: smaller;
+  }
+  header {
+    font-size: 1.2rem;
+  }
+  header img{
+    width: 25%;
+    height:auto;
+  }
+
+  .tabs button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .sec1{
+    font-size: 1rem;;
+  }
+
+  .sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec2 span {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+  .sec2 h3{
+    font-size: 1.2rem;
+  }
+  .sec2 p{
+    font-size: 1rem;
+  }
+  .sec2 img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .sec3{
+    display: flex;
+    justify-content: center;
+    padding:2rem;
+    
+  }
+  .sec3 h2 {
+    font-size: 1rem;
+    
+  }
+  .sec3 p{
+    font-size: .6rem;
+    
+  }
+  .sec3 div{
+    width:100%;
+    height:auto;
+    
+  }
+  footer p{
+  font-size: .5rem;
+  bottom: -.5rem;
+  } 
+  
+
+  main {
+    padding: 1rem;
+  }
 }
