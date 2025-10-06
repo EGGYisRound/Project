@@ -37,7 +37,7 @@ body {
 
 /* Banner */
 .bannermenu {
-  background-image: url("bannermenuimg.jpg");
+  background-image: url("../img/bannermenuimg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

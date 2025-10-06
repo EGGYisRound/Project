@@ -33,7 +33,7 @@ body {
 
     /* Header */
 header {
-      background-image: url("bannercofimg.jpg");
+      background-image: url("../img/bannercofimg.jpg");
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
